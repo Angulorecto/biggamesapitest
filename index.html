@@ -1,11 +1,15 @@
 <html>
   <body>
     <script>
-      // Example using Fetch API in JavaScript
-      fetch('https://biggamesapi.io/api/collections')
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error('Error:', error));
+      var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://biggamesapi.io/api/clans?page=1&pageSize=50&sort=Points&sortOrder=desc", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
     </script>
   </body>
 </html>
