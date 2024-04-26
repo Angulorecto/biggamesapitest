@@ -27,4 +27,4 @@ document.addEventListener("DOMContentLoaded", function() {
     let assetStr = "rbxassetid://14976576332";
     let assetId = extractAssetId(assetStr);
     console.log(assetId);
-}
+});
