@@ -5,10 +5,11 @@
   position: relative;
   width: 100%; /* Set the width of the div */
   height: 26%; /* Set the height of the div */
+  margin: auto;
 }
 .clanIcon {
   border-radius: 5%;
-  width: 15%; /* Set the width of the image relative to the parent div */
+  width: 135px; /* Set the width of the image relative to the parent div */
   position: absolute;
   top: 0; /* Set the distance from the top of the div */
   left: 0; /* Set the distance from the left of the div */
