@@ -17,6 +17,10 @@ async function fetchClanData() {
     }
 }
 
+function extractAssetId(assetStr) {
+  return assetStr.replace("rbxassetid://", "");
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     // Example usage
     fetchClanData().then(data => {
