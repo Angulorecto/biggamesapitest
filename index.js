@@ -17,12 +17,14 @@ async function fetchClanData() {
     }
 }
 
-// Example usage
-fetchClanData().then(data => {
-    if (data) {
-        console.log(data);
-    }
-});
-let assetStr = "rbxassetid://14976576332";
-let assetId = extractAssetId(assetStr);
-console.log(assetId);
+document.addEventListener("DOMContentLoaded", function() {
+    // Example usage
+    fetchClanData().then(data => {
+        if (data) {
+            console.log(data);
+        }
+    });
+    let assetStr = "rbxassetid://14976576332";
+    let assetId = extractAssetId(assetStr);
+    console.log(assetId);
+}
