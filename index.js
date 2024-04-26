@@ -1,4 +1,4 @@
-async function fetchClanData() {
+async function fetchClanDataAndUpdateElement(elementId) {
     const url = 'https://biggamesapi.io/api/clans?page=1&pageSize=10&sort=Points&sortOrder=desc';
     try {
         const response = await fetch(url);
@@ -10,10 +10,10 @@ async function fetchClanData() {
             depositedDiamonds: clan.DepositedDiamonds,
             points: clan.Points
         }));
-        return clanData;
+        const clanName = clanData[0].name; // Assuming you want to use the name of the first clan
+        document.getElementById(elementId).innerHTML = clanName;
     } catch (error) {
         console.error('Error fetching clan data:', error);
-        return null;
     }
 }
 
@@ -22,12 +22,7 @@ function extractAssetId(assetStr) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Example usage
-    fetchClanData().then(data => {
-        if (data) {
-            console.log(data);
-        }
-    });
+    fetchClanDataAndUpdateElement('clanNameElementId');
     let assetStr = "rbxassetid://14976576332";
     let assetId = extractAssetId(assetStr);
     console.log(assetId);
