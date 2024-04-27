@@ -1,9 +1,13 @@
+body {
+  display: flex;
+  flex-direction: left;
+}
 .clanDiv {
   background-color: #FFFFFF;
   border: #000000 solid 5px;
   border-radius: 20px;
   position: relative;
-  width: 100%; /* Set the width of the div */
+  width: 48%; /* Set the width of the div */
   height: 26%; /* Set the height of the div */
   margin: auto;
 }
