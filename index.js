@@ -11,9 +11,9 @@ async function fetchClanDataAndCreateElements(clans) {
             points: clan.Points,
             icon: clan.Icon // Add the icon property to the mapped clan data
         }));
-        
+
         const body = document.querySelector('body');
-        clanData.forEach(clan => {
+        for (const clan of clanData) {
             const specificResponse = await fetch(url);
             const specificData = await specificResponse.json();
             const specificClanData = specificData.data.map(clanData => ({
@@ -49,7 +49,7 @@ async function fetchClanDataAndCreateElements(clans) {
             div.appendChild(members);
             div.appendChild(shout);
             body.appendChild(div);
-        });
+        }
     } catch (error) {
         console.error('Error fetching clan data:', error);
     }
