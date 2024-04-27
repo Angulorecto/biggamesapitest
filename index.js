@@ -36,6 +36,10 @@ async function fetchClanDataAndCreateElements(clans) {
             shout.classList.add('shout');
             shout.innerText = specificClanData.Desc; // Set the shout text to the description
 
+            const diamonds = document.createElement('p');
+            shout.classList.add('diamonds');
+            shout.innerText = specificClanData.DepositedDiamonds; // Set the shout text to the description
+
             div.appendChild(img);
             div.appendChild(name);
             div.appendChild(members);
