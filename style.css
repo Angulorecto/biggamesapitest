@@ -1,6 +1,6 @@
 body {
   display: flex;
-  flex-direction: left;
+  flex-direction: row;
 }
 .clanDiv {
   background-color: #FFFFFF;
