@@ -8,7 +8,8 @@ async function fetchClanDataAndCreateElements() {
             members: clan.Members,
             memberCapacity: clan.MemberCapacity,
             depositedDiamonds: clan.DepositedDiamonds,
-            points: clan.Points
+            points: clan.Points,
+            icon: clan.Icon // Add the icon property to the mapped clan data
         }));
         
         const body = document.querySelector('body');
@@ -18,8 +19,13 @@ async function fetchClanDataAndCreateElements() {
 
             const img = document.createElement('img');
             img.classList.add('clanIcon');
-            const id = extractAssetId(clan.Icon);
-            img.src = `https://biggamesapi.io/image/${id}`;
+            if (clan.icon) {
+                const id = extractAssetId(clan.icon);
+                img.src = `https://biggamesapi.io/image/${id}`;
+            } else {
+                // Set a default image if clan.icon is not defined
+                img.src = 'default-icon-url.jpg';
+            }
 
             const name = document.createElement('h1');
             name.classList.add('clanName');
@@ -45,7 +51,7 @@ async function fetchClanDataAndCreateElements() {
 }
 
 function extractAssetId(assetStr) {
-  return assetStr.replace("rbxassetid://", "");
+    return assetStr.replace("rbxassetid://", "");
 }
 
 document.addEventListener("DOMContentLoaded", function() {
