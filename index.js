@@ -44,6 +44,7 @@ async function fetchClanDataAndCreateElements(clans) {
             div.appendChild(name);
             div.appendChild(members);
             div.appendChild(shout);
+            div.appendChild(diamonds);
             body.appendChild(div);
         }
     } catch (error) {
