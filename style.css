@@ -102,20 +102,5 @@ body {
     display: flex; /* Use flexbox for aligning */
     align-items: center; /* Center vertically */
     flex-grow: 1; /* Allow items to grow to fill the space equally */
-}
-
-.linkCreatedIcon {
-    height: var(--iconWidth); /* Adjust height as needed */
-    width: var(--iconHeight);  /* Adjust width as needed */
-    margin-right: var(--iconMarginRight); /* Add margin between icon and text */
-}
-.chatCreatedIcon {
-    height: var(--iconWidth); /* Adjust height as needed */
-    width: var(--iconHeight);  /* Adjust width as needed */
-    margin-right: var(--iconMarginRight); /* Add margin between icon and text */
-}
-.settingsCreatedIcon {
-    height: var(--iconWidth); /* Adjust height as needed */
-    width: var(--iconHeight);  /* Adjust width as needed */
-    margin-right: var(--iconMarginRight); /* Add margin between icon and text */
+    text-align: center;
 }
