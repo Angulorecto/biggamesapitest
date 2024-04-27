@@ -105,3 +105,13 @@ body {
     flex-grow: 1; /* Allow items to grow to fill the space equally */
     text-align: center;
 }
+.search {
+  position: relative;
+  top: 10%;
+  right: 1%;
+}
+.searchBar {
+  border-radius: 20px;
+  border: none;
+  height: 50%;
+}
