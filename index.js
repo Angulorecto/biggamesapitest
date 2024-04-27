@@ -1,3 +1,12 @@
+function formatNumber(value) {
+    const suffixes = ["", "K", "M", "B", "T"];
+    const suffixNum = Math.floor((""+value).length/3);
+    let shortValue = parseFloat((suffixNum !== 0 ? (value / Math.pow(1000, suffixNum)) : value).toPrecision(3));
+    if (shortValue % 1 !== 0) {
+        shortValue = shortValue.toFixed(1);
+    }
+    return shortValue + suffixes[suffixNum];
+}
 async function fetchClanDataAndCreateElements(clans) {
     const url = `https://biggamesapi.io/api/clans?page=1&pageSize=${clans}&sort=Points&sortOrder=desc`;
     try {
@@ -38,7 +47,7 @@ async function fetchClanDataAndCreateElements(clans) {
 
             const diamonds = document.createElement('p');
             diamonds.classList.add('diamonds');
-            diamonds.innerText = specificClanData.DepositedDiamonds; // Set the shout text to the description
+            diamonds.innerText = formatNumber(specificClanData.DepositedDiamonds); // Set the shout text to the description
 
             div.appendChild(img);
             div.appendChild(name);
