@@ -1,3 +1,6 @@
+function stripFontTags(response) {
+    return response.replace(/<\/?font[^>]*>/g, "");
+}
 function formatNumber(value) {
     const suffixes = ["", "K", "M", "B", "T"];
     const suffixNum = Math.floor((""+value).length/3);
@@ -47,7 +50,7 @@ async function fetchClanDataAndCreateElements(clans) {
 
             const shout = document.createElement('p');
             shout.classList.add('shout');
-            shout.innerText = specificClanData.Status + " - " + specificClanData.StatusUsername; // Set the shout text to the description
+            shout.innerText = stripFontTags(specificClanData.Status) + " - " + specificClanData.StatusUsername; // Set the shout text to the description
 
             const diamonds = document.createElement('p');
             diamonds.classList.add('diamonds');
