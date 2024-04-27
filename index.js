@@ -1,5 +1,5 @@
-async function fetchClanDataAndCreateElements() {
-    const url = 'https://biggamesapi.io/api/clans?page=1&pageSize=10&sort=Points&sortOrder=desc';
+async function fetchClanDataAndCreateElements(clans) {
+    const url = `https://biggamesapi.io/api/clans?page=1&pageSize=${clans}&sort=Points&sortOrder=desc`;
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -60,5 +60,5 @@ function extractAssetId(assetStr) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetchClanDataAndCreateElements();
+    fetchClanDataAndCreateElements(15);
 });
