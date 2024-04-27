@@ -3,33 +3,29 @@ async function fetchClanDataAndCreateElements(clans) {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        const clanData = data.data.map(clan => ({
-            name: clan.Name,
-            members: clan.Members,
-            memberCapacity: clan.MemberCapacity,
-            depositedDiamonds: clan.DepositedDiamonds,
-            points: clan.Points,
-            icon: clan.Icon // Add the icon property to the mapped clan data
-        }));
-
-        const body = document.querySelector('body');
-        for (const clan of clanData) {
-            const specificResponse = await fetch(`https://biggamesapi.io/api/clans/${clan.name}`);
+        const clanData = data.data.map(async clan => {
+            const specificResponse = await fetch(`https://biggamesapi.io/api/clan/${clan.Name}`);
             const specificData = await specificResponse.json();
             const specificClanData = specificData.data;
 
+            return {
+                name: clan.Name,
+                members: specificClanData.Members.length,
+                memberCapacity: specificClanData.MemberCapacity,
+                depositedDiamonds: specificClanData.DepositedDiamonds,
+                points: specificClanData.Points,
+                desc: specificClanData.Desc // Add the description to the clan data
+            };
+        });
+
+        const body = document.querySelector('body');
+        for (const clan of clanData) {
             const div = document.createElement('div');
             div.classList.add('clanDiv');
 
             const img = document.createElement('img');
             img.classList.add('clanIcon');
-            if (clan.icon) {
-                const id = extractAssetId(clan.icon);
-                img.src = `https://biggamesapi.io/image/${id}`;
-            } else {
-                // Set a default image if clan.icon is not defined
-                img.src = 'default-icon-url.jpg';
-            }
+            // Set the image source as needed
 
             const name = document.createElement('h1');
             name.classList.add('clanName');
@@ -41,7 +37,7 @@ async function fetchClanDataAndCreateElements(clans) {
 
             const shout = document.createElement('p');
             shout.classList.add('shout');
-            shout.innerText = specificClanData.Desc; // Set the latest shout here
+            shout.innerHTML = clan.desc; // Set the shout innerHTML to the description
 
             div.appendChild(img);
             div.appendChild(name);
@@ -54,10 +50,6 @@ async function fetchClanDataAndCreateElements(clans) {
     }
 }
 
-function extractAssetId(assetStr) {
-    return assetStr.replace("rbxassetid://", "");
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-    fetchClanDataAndCreateElements(15);
+    fetchClanDataAndCreateElements(10);
 });
