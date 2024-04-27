@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body {
   display: flex;
   flex-direction: row;
@@ -30,6 +31,7 @@ body {
   top: 0%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  font-family: 'Roboto', sans-serif;
 }
 .desc {
   text-align: center;
@@ -38,6 +40,7 @@ body {
   left: 4%; /* Set the distance from the left of the div */
   width: 90%; /* Set the width of the paragraph relative to the parent div */
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 .shout {
   text-align: center;
@@ -46,6 +49,7 @@ body {
   left: 4%; /* Set the distance from the left of the div */
   width: 90%; /* Set the width of the paragraph relative to the parent div */
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 .members {
   display: inline;
@@ -54,6 +58,7 @@ body {
   top: -10%; /* Set the distance from the bottom of the div */
   right: 1%; /* Set the distance from the right of the div */
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 .diamonds {
   display: inline;
@@ -62,6 +67,7 @@ body {
   top: 5%; /* Set the distance from the bottom of the div */
   right: 1%; /* Set the distance from the right of the div */
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 .type {
   width: 75%;
@@ -99,7 +105,7 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 25px;
-    font-family: 'righty';
+    font-family: 'Roboto', sans-serif;
     display: flex; /* Use flexbox for aligning */
     align-items: center; /* Center vertically */
     flex-grow: 1; /* Allow items to grow to fill the space equally */
