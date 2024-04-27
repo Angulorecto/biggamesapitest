@@ -8,7 +8,7 @@ function formatNumber(value) {
     return shortValue + suffixes[suffixNum];
 }
 async function fetchClanDataAndCreateElements(clans) {
-    const url = `https://biggamesapi.io/api/clans?page=1&pageSize=${clans}&sort=Points&sortOrder=desc`;
+    const url = `https://biggamesapi.io/api/clans?page=1&pageSize=${clans}&sort=Diamonds&sortOrder=desc`;
     try {
         const response = await fetch(url);
         const data = await response.json();
