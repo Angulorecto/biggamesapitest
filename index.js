@@ -41,9 +41,13 @@ async function fetchClanDataAndCreateElements(clans) {
             members.classList.add('members');
             members.innerText = `${specificClanData.Members.length}/${specificClanData.MemberCapacity}`;
 
+            const desc = document.createElement('p');
+            desc.classList.add('desc');
+            desc.innerText = specificClanData.Desc; // Set the shout text to the description
+
             const shout = document.createElement('p');
             shout.classList.add('shout');
-            shout.innerText = specificClanData.Desc; // Set the shout text to the description
+            shout.innerText = specificClanData.Status + " - " + specificClanData.StatusUsername; // Set the shout text to the description
 
             const diamonds = document.createElement('p');
             diamonds.classList.add('diamonds');
@@ -53,6 +57,7 @@ async function fetchClanDataAndCreateElements(clans) {
             div.appendChild(name);
             div.appendChild(members);
             div.appendChild(shout);
+            div.appendChild(desc);
             div.appendChild(diamonds);
             body.appendChild(div);
         }
