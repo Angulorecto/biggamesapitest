@@ -45,3 +45,11 @@ body {
   right: 1%; /* Set the distance from the right of the div */
   text-align: center;
 }
+.diamonds {
+  display: inline;
+  font-size: 25px; /* Set the font size relative to the parent div */
+  position: absolute;
+  top: 5%; /* Set the distance from the bottom of the div */
+  right: 1%; /* Set the distance from the right of the div */
+  text-align: center;
+}
