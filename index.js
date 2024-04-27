@@ -8,7 +8,11 @@ function formatNumber(value) {
     if (shortValue % 1 !== 0) {
         shortValue = shortValue.toFixed(1);
     }
-    return shortValue + suffixes[suffixNum];
+    if (suffixNum > 1) {
+        return shortValue + suffixes[suffixNum];
+    } else {
+        return shortValue;
+    }
 }
 async function fetchClanDataAndCreateElements(clans) {
     const url = `https://biggamesapi.io/api/clans?page=1&pageSize=${clans}&sort=DepositedDiamonds&sortOrder=desc`;
@@ -50,7 +54,7 @@ async function fetchClanDataAndCreateElements(clans) {
 
             const shout = document.createElement('p');
             shout.classList.add('shout');
-            shout.innerText = stripFontTags(specificClanData.Status) + "|| " + specificClanData.StatusUsername; // Set the shout text to the description
+            shout.innerText = stripFontTags(specificClanData.Status) + " || " + specificClanData.StatusUsername; // Set the shout text to the description
 
             const diamonds = document.createElement('p');
             diamonds.classList.add('diamonds');
