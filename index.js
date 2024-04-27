@@ -1,4 +1,4 @@
-async function fetchClanDataAndUpdateElement(elementId) {
+async function fetchClanDataAndCreateElements() {
     const url = 'https://biggamesapi.io/api/clans?page=1&pageSize=10&sort=Points&sortOrder=desc';
     try {
         const response = await fetch(url);
@@ -10,8 +10,35 @@ async function fetchClanDataAndUpdateElement(elementId) {
             depositedDiamonds: clan.DepositedDiamonds,
             points: clan.Points
         }));
-        const clanName = clanData[0].name; // Assuming you want to use the name of the first clan
-        document.getElementById(elementId).innerHTML = clanName;
+        
+        const body = document.querySelector('body');
+        clanData.forEach(clan => {
+            const div = document.createElement('div');
+            div.classList.add('clanDiv');
+
+            const img = document.createElement('img');
+            img.classList.add('clanIcon');
+            const id = extractAssetId(clan.Icon);
+            img.src = `https://biggamesapi.io/image/${id}`;
+
+            const name = document.createElement('h1');
+            name.classList.add('clanName');
+            name.innerText = clan.name;
+
+            const members = document.createElement('p');
+            members.classList.add('members');
+            members.innerText = `${clan.members}/${clan.memberCapacity}`;
+
+            const shout = document.createElement('p');
+            shout.classList.add('shout');
+            shout.innerText = 'LATEST_SHOUT'; // Set the latest shout here
+
+            div.appendChild(img);
+            div.appendChild(name);
+            div.appendChild(members);
+            div.appendChild(shout);
+            body.appendChild(div);
+        });
     } catch (error) {
         console.error('Error fetching clan data:', error);
     }
@@ -22,8 +49,5 @@ function extractAssetId(assetStr) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetchClanDataAndUpdateElement('clanNameElementId');
-    let assetStr = "rbxassetid://14976576332";
-    let assetId = extractAssetId(assetStr);
-    console.log(assetId);
+    fetchClanDataAndCreateElements();
 });
