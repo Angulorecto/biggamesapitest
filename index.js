@@ -14,6 +14,11 @@ async function fetchClanDataAndCreateElements() {
         
         const body = document.querySelector('body');
         clanData.forEach(clan => {
+            const specificResponse = await fetch(url);
+            const specificData = await specificResponse.json();
+            const specificClanData = specificData.data.map(clanData => ({
+                desc: clanData.Desc
+            }));
             const div = document.createElement('div');
             div.classList.add('clanDiv');
 
@@ -37,7 +42,7 @@ async function fetchClanDataAndCreateElements() {
 
             const shout = document.createElement('p');
             shout.classList.add('shout');
-            shout.innerText = 'LATEST_SHOUT'; // Set the latest shout here
+            shout.innerText = clanData.desc; // Set the latest shout here
 
             div.appendChild(img);
             div.appendChild(name);
