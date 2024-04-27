@@ -11,6 +11,7 @@ body {
   width: 48%; /* Set the width of the div */
   height: 26%; /* Set the height of the div */
   margin: auto;
+  margin-bottom: 10px;
 }
 .clanIcon {
   border-radius: 5%;
