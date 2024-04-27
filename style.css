@@ -62,3 +62,11 @@ body {
   right: 1%; /* Set the distance from the right of the div */
   text-align: center;
 }
+.type {
+  width: 75%;
+  margin: auto;
+}
+.order {
+  width: 10%;
+  margin: auto;
+}
