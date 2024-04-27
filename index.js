@@ -14,11 +14,10 @@ async function fetchClanDataAndCreateElements(clans) {
 
         const body = document.querySelector('body');
         for (const clan of clanData) {
-            const specificResponse = await fetch(url);
+            const specificResponse = await fetch(`https://biggamesapi.io/api/clans/${clan.name}`);
             const specificData = await specificResponse.json();
-            const specificClanData = specificData.data.map(clanData => ({
-                desc: clanData.Desc
-            }));
+            const specificClanData = specificData.data;
+
             const div = document.createElement('div');
             div.classList.add('clanDiv');
 
@@ -42,7 +41,7 @@ async function fetchClanDataAndCreateElements(clans) {
 
             const shout = document.createElement('p');
             shout.classList.add('shout');
-            shout.innerText = clanData.desc; // Set the latest shout here
+            shout.innerText = specificClanData.Desc; // Set the latest shout here
 
             div.appendChild(img);
             div.appendChild(name);
