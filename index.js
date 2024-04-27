@@ -50,7 +50,7 @@ async function fetchClanDataAndCreateElements(clans) {
 
             const shout = document.createElement('p');
             shout.classList.add('shout');
-            shout.innerText = stripFontTags(specificClanData.Status) + " -|- " + specificClanData.StatusUsername; // Set the shout text to the description
+            shout.innerText = stripFontTags(specificClanData.Status) + "|| " + specificClanData.StatusUsername; // Set the shout text to the description
 
             const diamonds = document.createElement('p');
             diamonds.classList.add('diamonds');
