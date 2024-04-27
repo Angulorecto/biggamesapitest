@@ -77,13 +77,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Add padding to the left and right */
     height: 13%;
     width: 100%;
     position: absolute;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 10px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.18);
