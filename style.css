@@ -175,4 +175,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  background-color: rgba(65, 65, 65, 0.1); /* Optional: add a background color for better visibility */
+  width: 100%;
+  z-index: 1; /* Ensure the title is above other content */
 }
