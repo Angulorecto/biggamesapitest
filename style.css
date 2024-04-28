@@ -123,6 +123,8 @@ body {
     height: 50%;
     padding-left: 40px; /* Adjust based on the icon width */
     background-color: #202020;
+    position: relative;
+    top: 5px; /* Adjust as needed */
 }
 
 .leaderIconDone {
