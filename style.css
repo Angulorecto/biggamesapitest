@@ -160,4 +160,5 @@ body {
   left: 2%;
   top: 52%;
   transform: translateY(-50%);
+  z-index: 2;
 }
