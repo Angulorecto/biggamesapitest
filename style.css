@@ -183,6 +183,8 @@ body {
 .uClanInfo {
   background-fill: #202020;
   background-radius: 10px;
+  height: 40%;
+  width: 30%;
 }
 .topClans {
   background-fill: #202020;
