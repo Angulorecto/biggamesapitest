@@ -178,7 +178,5 @@ body {
   position: sticky;
   top: 150px;
   margin-left: 5%;
-  background-color: rgba(65, 65, 65, 0.1); /* Optional: add a background color for better visibility */
-  width: 100%;
   z-index: 1; /* Ensure the title is above other content */
 }
