@@ -157,8 +157,8 @@ body {
   height: 25px;
   margin-right: 10px;
   position: absolute;
-  left: 2%;
-  top: 52%;
+  left: 3%;
+  top: 65%;
   transform: translateY(-50%);
   z-index: 2;
 }
