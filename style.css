@@ -112,19 +112,19 @@ body {
     text-align: center;
     margin-left: 5%;
 }
+
 .search {
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .searchBar {
     border-radius: 20px;
     border: none;
-    width: 15%;
-    height: 60%;
+    height: 50%;
+    padding-left: 40px; /* Adjust based on the icon width */
     background-color: #202020;
-    flex: 1; /* Take up remaining space */
 }
+
 .leaderIconDone {
   width: 30px;
   height: 30px;
@@ -152,4 +152,9 @@ body {
 .searchIconDone {
   width: 25px;
   height: 25px;
+  margin-right: 10px;
+  position: absolute;
+  left: 5px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
 }
