@@ -189,6 +189,7 @@ body {
   top: 250px;
   margin-left: 5%;
 }
+
 .topClans {
   background-color: #202020;
   border-radius: 10px;
@@ -196,5 +197,5 @@ body {
   width: 50%;
   position: sticky;
   top: 250px;
-  margin-left: 45%;
+  margin-left: 35%; /* Adjust margin-left to align with uClanInfo */
 }
