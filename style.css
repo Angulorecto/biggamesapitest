@@ -110,6 +110,7 @@ body {
     align-items: center; /* Center vertically */
     flex-grow: 1; /* Allow items to grow to fill the space equally */
     text-align: center;
+    margin-left: 5%;
 }
 .search {
   position: relative;
