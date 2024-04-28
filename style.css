@@ -185,6 +185,9 @@ body {
   border-radius: 10px;
   height: 40%;
   width: 30%;
+  position: sticky;
+  top: 250px;
+  margin-left: 5%;
 }
 .topClans {
   background-color: #202020;
