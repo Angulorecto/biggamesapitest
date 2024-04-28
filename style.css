@@ -123,3 +123,27 @@ body {
   height: 50%;
   background-color: #202020;
 }
+.leaderIconDone {
+  width: 20px;
+  height: 20px;
+}
+
+.battleIconDone {
+  width: 20px;
+  height: 20px;
+}
+
+.historyIconDone {
+  width: 20px;
+  height: 20px;
+}
+
+.uClanIconDone {
+  width: 20px;
+  height: 20px;
+}
+
+.searchIconDone {
+  width: 20px;
+  height: 20px;
+}
