@@ -125,8 +125,8 @@ body {
     background-color: #202020;
     color: #FFFFFF;
     position: relative;
-    top: 5%; /* Adjust as needed */
-    right: 1%;
+    top: 8px; /* Adjust as needed */
+    right: 3%;
 }
 
 .leaderIconDone {
@@ -158,8 +158,8 @@ body {
   height: 25px;
   margin-right: 10px;
   position: absolute;
-  left: 3%;
-  top: 65%;
+  left: 1%;
+  top: 75%;
   transform: translateY(-50%);
   z-index: 2;
 }
