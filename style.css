@@ -126,24 +126,29 @@ body {
 .leaderIconDone {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .battleIconDone {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .historyIconDone {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .uClanIconDone {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .searchIconDone {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
