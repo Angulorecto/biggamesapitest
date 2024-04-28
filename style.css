@@ -180,3 +180,11 @@ body {
   margin-left: 5%;
   z-index: 1; /* Ensure the title is above other content */
 }
+.uClanInfo {
+  background-fill: #202020;
+  background-radius: 10px;
+}
+.topClans {
+  background-fill: #202020;
+  background-radius: 10px;
+}
