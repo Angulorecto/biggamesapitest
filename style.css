@@ -127,7 +127,6 @@ body {
 /* Search bar styles */
 .search {
   position: relative;
-  width: 30px;
 }
 
 .searchBar {
@@ -140,6 +139,9 @@ body {
   position: relative;
   top: 8px; /* Adjust as needed */
   right: 3%;
+}
+.searchIconDone {
+  width: 30px;
 }
 
 /* Icon styles with transition */
