@@ -139,21 +139,18 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  animation: return 0.5s 1;
 }
 
 .historyIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  animation: return 0.5s 1;
 }
 
 .uClanIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  animation: return 0.5s 1;
 }
 
 .itemsIconDone {
@@ -183,6 +180,18 @@ body {
 }
 .navItem:hover .itemsIconDone {
   /* CSS rules for hover state */
+}
+.navItem:not(:hover) .leaderIconDone {
+  animation: return 0.5s 1;
+}
+.navItem:not(:hover) .historyIconDone {
+  animation: return 0.5s 1;
+}
+.navItem:not(:hover) .uClanIconDone {
+  animation: return 0.5s 1;
+}
+.navItem:not(:hover) .itemsIconDone {
+  animation: return 0.5s 1;
 }
 .content {
   width: 100%;
@@ -255,6 +264,6 @@ body {
 }
 @keyframes return {
   to {
-    transform: rotate(0deg), translateY(0), ;
+    transform: rotate(0deg) translateY(0);
   }
 }
