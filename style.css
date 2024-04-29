@@ -184,12 +184,15 @@ body {
 .navItem:not(:hover) .leaderIconDone {
   animation: return 0.5s 1;
 }
+
 .navItem:not(:hover) .historyIconDone {
   animation: return 0.5s 1;
 }
+
 .navItem:not(:hover) .uClanIconDone {
   animation: return 0.5s 1;
 }
+
 .navItem:not(:hover) .itemsIconDone {
   animation: return 0.5s 1;
 }
