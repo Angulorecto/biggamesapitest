@@ -172,7 +172,7 @@ body {
 .navItem:hover .leaderboardIcon {
   /* CSS rules for hover state */
 }
-#historyNav:hover .historyIconDone {
+#historyNav:hover svg {
   transform: rotateX(360deg);
 }
 .navItem:hover .uClanIcon {
