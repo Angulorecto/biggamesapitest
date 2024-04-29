@@ -173,7 +173,7 @@ body {
   /* CSS rules for hover state */
 }
 .navItem:hover .historyIconDone {
-  animation: rotateIcon 1s infinite;
+  animation: rotateIcon 1s forward;
 }
 .navItem:hover .uClanIcon {
   /* CSS rules for hover state */
