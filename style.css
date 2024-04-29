@@ -169,16 +169,16 @@ body {
   transform: translateY(-50%);
   z-index: 2;
 }
-.navItem:hover .leaderboardIcon {
+.navItem:hover .leaderboardIconDone {
   /* CSS rules for hover state */
 }
 .navItem:hover .historyIconDone {
   animation: rotateIcon 1s 1;
 }
-.navItem:hover .uClanIcon {
+.navItem:hover .uClanIconDone {
   animation: bounce 1s 1;
 }
-.navItem:hover .itemsIcon {
+.navItem:hover .itemsIconDone {
   /* CSS rules for hover state */
 }
 .content {
