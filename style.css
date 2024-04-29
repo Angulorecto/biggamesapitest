@@ -172,8 +172,8 @@ body {
 .navItem:hover .leaderboardIcon {
   /* CSS rules for hover state */
 }
-#historyNav:hover .historyIconDone {
-  transform: rotate(360deg);
+#historyNav .historyIconDone {
+  animation: rotateIcon 2s infinite;
 }
 .navItem:hover .uClanIcon {
   /* CSS rules for hover state */
@@ -225,4 +225,12 @@ body {
   position: sticky;
   top: 250px;
   margin-left: 5%;
+}
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
