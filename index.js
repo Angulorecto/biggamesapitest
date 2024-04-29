@@ -3,16 +3,16 @@ function stripFontTags(response) {
 }
 function formatNumber(value) {
     const suffixes = ["", "K", "M", "B", "T"];
-    const suffixNum = Math.floor((""+value).length/3);
-    let shortValue = parseFloat((suffixNum !== 0 ? (value / Math.pow(1000, suffixNum)) : value).toPrecision(3));
+    let suffixNum = 0;
+    while (value >= 1000 && suffixNum < suffixes.length - 1) {
+        value /= 1000;
+        suffixNum++;
+    }
+    let shortValue = parseFloat(value.toPrecision(3));
     if (shortValue % 1 !== 0) {
         shortValue = shortValue.toFixed(1);
     }
-    if (suffixNum > 1) {
-        return shortValue + suffixes[suffixNum];
-    } else {
-        return shortValue;
-    }
+    return shortValue + suffixes[suffixNum];
 }
 async function fetchClanDataAndCreateElements(clans) {
     const url = `https://biggamesapi.io/api/clans?page=1&pageSize=${clans}&sort=DepositedDiamonds&sortOrder=desc`;
