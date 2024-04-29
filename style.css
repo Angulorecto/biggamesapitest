@@ -139,18 +139,21 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  animation: return 0.5s 1;
 }
 
 .historyIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  animation: return 0.5s 1;
 }
 
 .uClanIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  animation: return 0.5s 1;
 }
 
 .itemsIconDone {
@@ -248,5 +251,10 @@ body {
   }
   0%, 100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes return {
+  to {
+    transform: rotate(0deg), translateY(0), ;
   }
 }
