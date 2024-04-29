@@ -176,7 +176,7 @@ body {
   animation: rotateIcon 1s 1;
 }
 .navItem:hover .uClanIconDone {
-  animation: bounce 1s 1;
+  animation: bounce 0.8s 1;
 }
 .navItem:hover .itemsIconDone {
   /* CSS rules for hover state */
