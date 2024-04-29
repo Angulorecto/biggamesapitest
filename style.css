@@ -241,12 +241,12 @@ body {
 } 
 @keyframes shake {
   0%, 40%, 80% {
-    transform: rotate(-10deg);
+    transform: rotate(-20deg);
   }
   20%, 60% {
     transform: rotate(20deg);
   }
   100% {
-    transform: rotate(10deg);
+    transform: rotate(0deg);
   }
 }
