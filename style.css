@@ -239,3 +239,14 @@ body {
    40% {transform: translateY(-10px);} 
    60% {transform: translateY(5px);} 
 } 
+@keyframes shake {
+  0%, 40%, 80% {
+    transform: rotate(-10deg);
+  }
+  20%, 60% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
