@@ -14,8 +14,8 @@ function formatNumber(value) {
     }
     return shortValue + suffixes[suffixNum];
 }
-async function fetchClanDataAndCreateElements(clans) {
-    const url = `https://biggamesapi.io/api/clans?page=1&pageSize=${clans}&sort=DepositedDiamonds&sortOrder=desc`;
+async function fetchClanDataAndCreateElements() {
+    const url = `https://biggamesapi.io/api/clans?page=1&pageSize=10&sort=DepositedDiamonds&sortOrder=desc`;
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -78,5 +78,5 @@ function extractAssetId(assetStr) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetchClanDataAndCreateElements(10);
+    fetchClanDataAndCreateElements();
 });
