@@ -205,3 +205,12 @@ body {
   top: 290px; /* Adjust top value to align with uClanInfo */
   margin-left: 50%;
 }
+.allItemsList {
+  background-color: #202020;
+  border-radius: 10px;
+  height: 40%;
+  width: 40%;
+  position: sticky;
+  top: 250px;
+  margin-left: 5%;
+}
