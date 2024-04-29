@@ -127,6 +127,7 @@ body {
 /* Search bar styles */
 .search {
   position: relative;
+  width: 30px;
 }
 
 .searchBar {
