@@ -66,6 +66,8 @@ const icons = {
     `
 };
 
+const iconOrder = ["acheivementsIcon", "boostsIcon", "boothsIcon", "boxesIcon", "buffsIcon", "charmsIcon", "currencyIcon", "eggsIcon", "enchantsIcon"];
+
 document.addEventListener("DOMContentLoaded", function() {
     Object.keys(icons).forEach(iconType => {
         replace(iconType, icons[iconType]);
