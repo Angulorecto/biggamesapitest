@@ -154,12 +154,20 @@ body {
   height: 100%;
 }
 
+.navItem .top-left {
+  transition: fill 0.5s ease;
+}
+
 .navItem:hover .top-left {
-  animation: moveTopLeftToTopRight 0.3s forwards;
+  transform: translate(100%, 0);
+}
+
+.navItem .top-right {
+  transition: transform 0.5s ease;
 }
 
 .navItem:hover .top-right {
-  fill: #00ff00; /* Change the fill color to your desired value */
+  transform: translate(100%, 0);
 }
 
 .navItem:hover .bottom-left {
@@ -180,13 +188,13 @@ body {
   z-index: 2;
 }
 .navItem:hover .leaderIconDone {
-  animation: shake 1s 1;
+  animation: shake 0.5s 1;
 }
 .navItem:hover .historyIconDone {
-  animation: rotateIcon 1s 1;
+  animation: rotateIcon 0.5s 1;
 }
 .navItem:hover .uClanIconDone {
-  animation: bounce 1s 1;
+  animation: bounce 0.5s 1;
 }
 .navItem:hover .itemsIconDone {
   /* CSS rules for hover state */
@@ -274,13 +282,5 @@ body {
 @keyframes return {
   to {
     transform: rotate(0deg) translateY(0);
-  }
-}
-@keyframes moveTopLeftToTopRight {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(100%, 0);
   }
 }
