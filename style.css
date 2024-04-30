@@ -155,29 +155,27 @@ body {
 }
 
 .navItem .top-left {
-  transition: transform 0.5s ease;
-  fill: red;
+  transition: fill 0.5s ease;
 }
 
 .navItem:hover .top-left {
-  animation: switchQuadrants 2s ease forward;
-}
-
-.navItem .top-right {
-  transition: transform 0.5s ease;
-  fill: green;
+  fill: yellow;
 }
 
 .navItem:hover .top-right {
   animation: switchQuadrants 2s ease forward;
 }
 
+.navItem .bottom-left {
+  transition: fill 0.5s ease;
+}
+
 .navItem:hover .bottom-left {
-  fill: #ff00ff; /* Change the fill color to your desired value */
+  fill: blue;
 }
 
 .navItem:hover .bottom-right {
-  fill: #ffff00; /* Change the fill color to your desired value */
+  animation: switchQuadrants 2s ease forward;
 }
 .searchIconDone {
   width: 25px;
