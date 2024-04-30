@@ -159,7 +159,7 @@ body {
 }
 
 .navItem:hover .top-left {
-  animation: switchQuadrants 1s forwards;
+  animation: switchTopLeft 1s forwards;
 }
 
 .navItem .top-right {
@@ -167,7 +167,7 @@ body {
 }
 
 .navItem:hover .top-right {
-  animation: switchQuadrants 1s forwards;
+  animation: switchTopRight 1s forwards;
 }
 
 .navItem .bottom-left {
@@ -175,7 +175,7 @@ body {
 }
 
 .navItem:hover .bottom-left {
-  animation: switchQuadrants 1s forwards;
+  animation: switchBottomLeft 1s forwards;
 }
 
 .navItem .bottom-right {
@@ -183,7 +183,7 @@ body {
 }
 
 .navItem:hover .bottom-right {
-  animation: switchQuadrants 1s forwards;
+  animation: switchBottomRight 1s forwards;
 }
 .searchIconDone {
   width: 25px;
@@ -289,20 +289,38 @@ body {
     transform: rotate(0deg) translateY(0);
   }
 }
-@keyframes switchQuadrants {
-    0% {
-        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
-    }
-    25% {
-        clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
-    }
-    50% {
-        clip-path: polygon(100% 50%, 100% 100%, 50% 100%, 50% 50%);
-    }
-    75% {
-        clip-path: polygon(50% 100%, 0 100%, 0 50%, 50% 50%);
-    }
-    100% {
-        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
-    }
+@keyframes switchTopRight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, -100%);
+  }
+}
+
+@keyframes switchTopLeft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, -100%);
+  }
+}
+
+@keyframes switchBottomLeft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 100%);
+  }
+}
+
+@keyframes switchBottomRight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 100%);
+  }
 }
