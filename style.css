@@ -155,11 +155,11 @@ body {
 }
 
 .navItem .top-left {
-  transition: fill 0.5s ease;
+  fill: green;
 }
 
 .navItem:hover .top-left {
-  fill: yellow;
+  animation: switchQuadrants 1s forwards;
 }
 
 .navItem .top-right {
@@ -167,16 +167,15 @@ body {
 }
 
 .navItem:hover .top-right {
-  animation: switchQuadrants 2s forwards;
-  animation-delay: 2s; /* Delay the animation of the top-right quadrant */
+  animation: switchQuadrants 1s forwards;
 }
 
 .navItem .bottom-left {
-  transition: fill 0.5s ease;
+  fill: yellow;
 }
 
 .navItem:hover .bottom-left {
-  fill: blue;
+  animation: switchQuadrants 1s forwards;
 }
 
 .navItem .bottom-right {
@@ -184,7 +183,7 @@ body {
 }
 
 .navItem:hover .bottom-right {
-  animation: switchQuadrants 2s forwards;
+  animation: switchQuadrants 1s forwards;
 }
 .searchIconDone {
   width: 25px;
@@ -291,10 +290,19 @@ body {
   }
 }
 @keyframes switchQuadrants {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(100%);
-  }
+    0% {
+        clip-path: url(#clip-bottom-right);
+    }
+    25% {
+        clip-path: url(#clip-bottom-left);
+    }
+    50% {
+        clip-path: url(#clip-top-left);
+    }
+    75% {
+        clip-path: url(#clip-top-right);
+    }
+    100% {
+        clip-path: url(#clip-bottom-right);
+    }
 }
