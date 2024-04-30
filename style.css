@@ -154,12 +154,36 @@ body {
   height: 100%;
 }
 
-.itemsIconDone .top-left path {
+.navItem .top-left {
   transition: fill 0.3s ease;
 }
 
-.itemsIconDone:hover .top-left path {
+.navItem:hover .top-left {
   fill: #ff0000; /* Change the fill color to your desired value */
+}
+
+.navItem .top-right {
+  transition: fill 0.3s ease;
+}
+
+.navItem:hover .top-right {
+  fill: #00ff00; /* Change the fill color to your desired value */
+}
+
+.navItem .bottom-left {
+  transition: fill 0.3s ease;
+}
+
+.navItem:hover .bottom-left {
+  fill: #ff00ff; /* Change the fill color to your desired value */
+}
+
+.navItem .bottom-right {
+  transition: fill 0.3s ease;
+}
+
+.navItem:hover .bottom-right {
+  fill: #ffff00; /* Change the fill color to your desired value */
 }
 .searchIconDone {
   width: 25px;
