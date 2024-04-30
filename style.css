@@ -143,7 +143,7 @@ body {
   height: 30px;
   margin-right: 10px;
 }
-.itemsIconDone {
+.item-container {
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -181,26 +181,6 @@ body {
 }
 .navItem:not(:hover) .itemsIconDone {
   animation: return 0.5s 1;
-}
-
-.top-left {
-  clip-path: url(#clip-top-left);
-  animation: animate-top-left 1s linear infinite;
-}
-
-.top-right {
-  clip-path: url(#clip-top-right);
-  animation: animate-top-right 1s linear infinite;
-}
-
-.bottom-left {
-  clip-path: url(#clip-bottom-left);
-  animation: animate-bottom-left 1s linear infinite;
-}
-
-.bottom-right {
-  clip-path: url(#clip-bottom-right);
-  animation: animate-bottom-right 1s linear infinite;
 }
 .content {
   width: 100%;
@@ -273,40 +253,5 @@ body {
 @keyframes return {
   to {
     transform: rotate(0deg) translateY(0);
-  }
-}
-@keyframes animate-top-left {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes animate-top-right {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes animate-bottom-left {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes animate-bottom-right {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
