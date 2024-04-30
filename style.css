@@ -213,9 +213,6 @@ body {
 .navItem:not(:hover) .uClanIconDone {
   animation: return 0.5s 1;
 }
-.navItem:not(:hover) .itemsIconDone {
-  animation: return 0.5s 1;
-}
 .content {
   width: 100%;
   height: 90%;
