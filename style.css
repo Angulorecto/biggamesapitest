@@ -291,18 +291,23 @@ body {
 }
 @keyframes switchQuadrants {
     0% {
-        transform: translate(0, 0);
+        top: 0;
+        left: 0;
     }
     25% {
-        transform: translate(-100%, 100%);
+        top: -100%;
+        left: 100%;
     }
     50% {
-        transform: translate(-100%, -100%);
+        top: 100%;
+        left: 100%;
     }
     75% {
-        transform: translate(100%, -100%);
+        top: 100%;
+        left: -100%;
     }
     100% {
-        transform: translate(0, 0);
+        top: 0;
+        left: 0;
     }
 }
