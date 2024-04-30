@@ -160,7 +160,7 @@ body {
 }
 
 .navItem:hover .top-left {
-  transform: translate(-100%, 0);
+  animation: switchQuadrants 2s ease forward;
 }
 
 .navItem .top-right {
@@ -169,7 +169,7 @@ body {
 }
 
 .navItem:hover .top-right {
-  transform: translate(-100%, 0);
+  animation: switchQuadrants 2s ease forward;
 }
 
 .navItem:hover .bottom-left {
@@ -197,9 +197,6 @@ body {
 }
 .navItem:hover .uClanIconDone {
   animation: bounce 0.5s 1;
-}
-.navItem:hover .itemsIconDone {
-  /* CSS rules for hover state */
 }
 .navItem:not(:hover) .leaderIconDone {
   animation: return 0.5s 1;
@@ -284,5 +281,13 @@ body {
 @keyframes return {
   to {
     transform: rotate(0deg) translateY(0);
+  }
+}
+@keyframes switchQuadrants {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(100%, 0);
   }
 }
