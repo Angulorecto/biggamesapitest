@@ -154,32 +154,16 @@ body {
   height: 100%;
 }
 
-.navItem .top-left {
-  transition: fill 0.3s ease;
-}
-
 .navItem:hover .top-left {
-  fill: #ff0000; /* Change the fill color to your desired value */
-}
-
-.navItem .top-right {
-  transition: fill 0.3s ease;
+  animation: moveTopLeftToTopRight 0.3s forwards;
 }
 
 .navItem:hover .top-right {
   fill: #00ff00; /* Change the fill color to your desired value */
 }
 
-.navItem .bottom-left {
-  transition: fill 0.3s ease;
-}
-
 .navItem:hover .bottom-left {
   fill: #ff00ff; /* Change the fill color to your desired value */
-}
-
-.navItem .bottom-right {
-  transition: fill 0.3s ease;
 }
 
 .navItem:hover .bottom-right {
@@ -290,5 +274,13 @@ body {
 @keyframes return {
   to {
     transform: rotate(0deg) translateY(0);
+  }
+}
+@keyframes moveTopLeftToTopRight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
   }
 }
