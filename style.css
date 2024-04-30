@@ -155,7 +155,8 @@ body {
 }
 
 .navItem .top-left {
-  transition: fill 0.5s ease;
+  transition: transform 0.5s ease;
+  fill: red;
 }
 
 .navItem:hover .top-left {
@@ -164,6 +165,7 @@ body {
 
 .navItem .top-right {
   transition: transform 0.5s ease;
+  fill: green;
 }
 
 .navItem:hover .top-right {
