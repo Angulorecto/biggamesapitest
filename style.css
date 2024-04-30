@@ -162,6 +162,10 @@ body {
   fill: yellow;
 }
 
+.navItem .top-right {
+  fill: red;
+}
+
 .navItem:hover .top-right {
   animation: switchQuadrants 2s ease forward;
 }
@@ -172,6 +176,10 @@ body {
 
 .navItem:hover .bottom-left {
   fill: blue;
+}
+
+.navItem .top-right {
+  fill: purple;
 }
 
 .navItem:hover .bottom-right {
