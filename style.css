@@ -177,4 +177,21 @@ body {
   left: 1%;
   top: 75%;
   transform: translateY(-50%);
+  z-index: 2;
+}
+
+.navIcon:hover .leaderIconDone {
+  
+}
+
+.navIcon:hover .historyIconDone {
+  
+}
+
+.navIcon:hover .uClanIconDone {
+  
+}
+
+.navIcon:hover .itemsIconDone {
+  
 }
