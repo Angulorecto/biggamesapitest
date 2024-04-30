@@ -160,7 +160,7 @@ body {
 }
 
 .navItem:hover .top-left {
-  transform: translate(100%, 0);
+  transform: translate(-100%, 0);
 }
 
 .navItem .top-right {
@@ -169,7 +169,7 @@ body {
 }
 
 .navItem:hover .top-right {
-  transform: translate(100%, 0);
+  transform: translate(-100%, 0);
 }
 
 .navItem:hover .bottom-left {
