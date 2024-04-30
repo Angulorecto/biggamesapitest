@@ -1,174 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-image: radial-gradient(#101010, #151515);
 }
-
 .clanDiv {
   background-color: #FFFFFF;
   border: #000000 solid 5px;
   border-radius: 20px;
   position: relative;
-  width: 48%;
-  height: 26%;
+  width: 48%; /* Set the width of the div */
+  height: 26%; /* Set the height of the div */
   margin: auto;
   margin-bottom: 10px;
 }
-
 .clanIcon {
   border-radius: 5%;
-  width: 135px;
+  width: 135px; /* Set the width of the image relative to the parent div */
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; /* Set the distance from the top of the div */
+  left: 0; /* Set the distance from the left of the div */
   border: #000000 solid 3px;
   margin: 10px;
 }
-
 .clanName {
   display: inline;
-  font-size: 80px;
+  font-size: 80px; /* Set the font size relative to the parent div */
   position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
   font-family: 'Roboto', sans-serif;
 }
-
 .desc {
   text-align: center;
   position: absolute;
-  bottom: 30%;
-  left: 4%;
-  width: 90%;
+  bottom: 30%; /* Set the distance from the bottom of the div */
+  left: 4%; /* Set the distance from the left of the div */
+  width: 90%; /* Set the width of the paragraph relative to the parent div */
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 .shout {
   text-align: center;
   position: absolute;
-  bottom: 11%;
-  left: 4%;
-  width: 90%;
+  bottom: 11%; /* Set the distance from the bottom of the div */
+  left: 4%; /* Set the distance from the left of the div */
+  width: 90%; /* Set the width of the paragraph relative to the parent div */
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 .members {
   display: inline;
-  font-size: 25px;
+  font-size: 25px; /* Set the font size relative to the parent div */
   position: absolute;
-  top: -10%;
-  right: 1%;
+  top: -10%; /* Set the distance from the bottom of the div */
+  right: 1%; /* Set the distance from the right of the div */
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
-
 .diamonds {
   display: inline;
-  font-size: 25px;
+  font-size: 25px; /* Set the font size relative to the parent div */
   position: absolute;
-  top: 5%;
-  right: 1%;
+  top: 5%; /* Set the distance from the bottom of the div */
+  right: 1%; /* Set the distance from the right of the div */
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
-
 .type {
   width: 75%;
   margin: auto;
 }
-
 .order {
   width: 10%;
   margin: auto;
   display: inline;
 }
-
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  height: 10%;
-  width: 99.9%;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  background-color: rgba(65, 65, 65, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 10%;
+    width: 99.9%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background-color: rgba(65, 65, 65, 0.1);
 }
-
 .logoCreated {
-  margin-left: 20px;
-  margin-right: 20px;
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-right: 20px;
 }
-
 .navItem {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  text-align: center;
-  margin-left: 5%;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    display: flex; /* Use flexbox for aligning */
+    align-items: center; /* Center vertically */
+    flex-grow: 1; /* Allow items to grow to fill the space equally */
+    text-align: center;
+    margin-left: 5%;
 }
-
 .search {
-  position: relative;
+    position: relative;
 }
-
 .searchBar {
-  border-radius: 20px;
-  border: none;
-  height: 50%;
-  padding-left: 40px;
-  background-color: #202020;
-  color: #FFFFFF;
-  position: relative;
-  top: 8px;
-  right: 3%;
+    border-radius: 20px;
+    border: none;
+    height: 50%;
+    padding-left: 40px; /* Adjust based on the icon width */
+    background-color: #202020;
+    color: #FFFFFF;
+    position: relative;
+    top: 8px; /* Adjust as needed */
+    right: 3%;
 }
-
 .leaderIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-
 .battleIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-
 .historyIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-
 .uClanIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-
 .itemsIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
-
 .searchIconDone {
   width: 25px;
   height: 25px;
@@ -179,49 +158,100 @@ body {
   transform: translateY(-50%);
   z-index: 2;
 }
-
-.navItem{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease-in-out;
+.navItem:hover .leaderIconDone {
+  animation: shake 1s 1;
 }
-
-.navItem:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+.navItem:hover .historyIconDone {
+  animation: rotateIcon 1s 1;
 }
-
+.navItem:hover .uClanIconDone {
+  animation: bounce 1s 1;
+}
+.navItem:hover .itemsIconDone {
+  /* CSS rules for hover state */
+}
 .navItem:not(:hover) .leaderIconDone {
-  animation: return-rotate 0.5s 1;
+  animation: return 0.5s 1;
 }
-
 .navItem:not(:hover) .historyIconDone {
-  animation: return-rotate 0.5s 1;
+  animation: return 0.5s 1;
 }
-
 .navItem:not(:hover) .uClanIconDone {
-  animation: return-bounce 0.5s 1;
+  animation: return 0.5s 1;
 }
-
 .navItem:not(:hover) .itemsIconDone {
   animation: return 0.5s 1;
 }
-
-@keyframes return-rotate {
-  to {
+.content {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background-color: none;
+}
+.dashTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  position: sticky;
+  top: 150px;
+  margin-left: 5%;
+  z-index: 1; /* Ensure the title is above other content */
+}
+.uClanInfo {
+  background-color: #202020;
+  border-radius: 10px;
+  height: 40%;
+  width: 40%;
+  position: sticky;
+  top: 250px;
+  margin-left: 5%;
+}
+.topClans {
+  background-color: #202020;
+  border-radius: 10px;
+  height: 40%;
+  width: 45%;
+  position: sticky;
+  top: 290px; /* Adjust top value to align with uClanInfo */
+  margin-left: 50%;
+}
+.allItemsListCategory {
+  background-color: #202020;
+  border-radius: 10px;
+  height: 10%;
+  width: 20%;
+  position: sticky;
+  top: 250px;
+  margin-left: 5%;
+}
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-10px);} 
+   60% {transform: translateY(5px);} 
+} 
+@keyframes shake {
+  10%, 50%, 90% {
+    transform: rotate(-20deg);
+  }
+  30%, 70% {
+    transform: rotate(20deg);
+  }
+  0%, 100% {
     transform: rotate(0deg);
   }
 }
-
-@keyframes return-bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(5px);
+@keyframes return {
+  to {
+    transform: rotate(0deg) translateY(0);
   }
 }
