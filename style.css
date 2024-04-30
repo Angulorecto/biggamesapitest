@@ -291,18 +291,18 @@ body {
 }
 @keyframes switchQuadrants {
     0% {
-        clip-path: url(#clip-bottom-right);
+        transform: translate(0, 0);
     }
     25% {
-        clip-path: url(#clip-bottom-left);
+        transform: translate(-100%, 100%);
     }
     50% {
-        clip-path: url(#clip-top-left);
+        transform: translate(-100%, -100%);
     }
     75% {
-        clip-path: url(#clip-top-right);
+        transform: translate(100%, -100%);
     }
     100% {
-        clip-path: url(#clip-bottom-right);
+        transform: translate(0, 0);
     }
 }
