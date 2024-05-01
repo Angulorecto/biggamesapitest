@@ -143,7 +143,7 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  transition: transform 0.5s ease;
+  animation: rotateReset 0.3s ease;
 }
 .uClanIconDone {
   width: 30px;
@@ -200,7 +200,7 @@ body {
   animation: shake 0.5s 1;
 }
 .navItem:hover .historyIconDone {
-  transform: rotate(-360);
+  animation: rotateHover 0.3s ease forwards;
 }
 .navItem:hover .uClanIconDone {
   animation: bounce 0.5s 1;
@@ -253,7 +253,18 @@ body {
    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
    40% {transform: translateY(-10px);} 
    60% {transform: translateY(5px);} 
-} 
+}
+@keyframes rotateHover {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateReset {
+  100% {
+    transform: rotate(0);
+  }
+}
 @keyframes shake {
   10%, 50%, 90% {
     transform: rotate(-15deg);
@@ -263,13 +274,5 @@ body {
   }
   0%, 100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes return {
-  to {
-    transform: rotate(0deg) translateY(0);
-    width: 30px;
-    height: 30px;
-    
   }
 }
