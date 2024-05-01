@@ -214,13 +214,13 @@ body {
 .navItem:hover .uClanIconDone {
   animation: bounce 0.5s 1;
 }
-.navItem:not(:hover) .leaderIconDone {
+.navItem:mouseout .leaderIconDone {
   animation: return 0.5s 1;
 }
-.navItem:not(:hover) .historyIconDone {
+.navItem:mouseout .historyIconDone {
   animation: return 0.5s 1;
 }
-.navItem:not(:hover) .uClanIconDone {
+.navItem:mouseout .uClanIconDone {
   animation: return 0.5s 1;
 }
 .content {
