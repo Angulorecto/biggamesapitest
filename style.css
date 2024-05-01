@@ -143,7 +143,7 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
 .uClanIconDone {
   width: 30px;
@@ -204,15 +204,6 @@ body {
 }
 .navItem:hover .uClanIconDone {
   animation: bounce 0.5s 1;
-}
-.navItem:mouseout .leaderIconDone {
-  animation: return 0.5s 1;
-}
-.navItem:mouseout .historyIconDone {
-  animation: return 0.5s 1;
-}
-.navItem:mouseout .uClanIconDone {
-  animation: return 0.5s 1;
 }
 .content {
   width: 100%;
