@@ -159,7 +159,7 @@ body {
 }
 
 .navItem:hover .top-left {
-  fill: #00FFFF; /* Change the fill color to your desired value */
+  fill: #FF0000; /* Change the fill color to your desired value */
 }
 
 .navItem .top-right {
@@ -167,7 +167,7 @@ body {
 }
 
 .navItem:hover .top-right {
-  fill: #FFFFFF; /* Change the fill color to your desired value */
+  fill: #FFFF00; /* Change the fill color to your desired value */
 }
 
 .navItem .bottom-left {
@@ -175,7 +175,7 @@ body {
 }
 
 .navItem:hover .bottom-left {
-  fill: #89CFF0; /* Change the fill color to your desired value */
+  fill: #00FF00; /* Change the fill color to your desired value */
 }
 
 .navItem .bottom-right {
@@ -183,7 +183,7 @@ body {
 }
 
 .navItem:hover .bottom-right {
-  fill: #FF69B4; /* Change the fill color to your desired value */
+  fill: #0000FF; /* Change the fill color to your desired value */
 }
 .searchIconDone {
   width: 25px;
