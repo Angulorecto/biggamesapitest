@@ -127,21 +127,25 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  animation: return 0.5s ease;
 }
 .battleIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  animation: return 0.5s ease;
 }
 .historyIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  animation: return 0.5s ease;
 }
 .uClanIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  animation: return 0.5s ease;
 }
 .itemsIconDone {
   width: 30px;
