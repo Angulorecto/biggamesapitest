@@ -124,9 +124,10 @@ body {
     right: 3%;
 }
 .homeIconDone {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
+  margin-left: 30px;
   animation: return 0.5s ease;
 }
 .leaderIconDone {
@@ -167,31 +168,24 @@ body {
 .navItem .top-left {
   transition: fill 0.5s ease;
 }
-
 .navItem:hover .top-left {
   fill: #FF0000; /* Change the fill color to your desired value */
 }
-
 .navItem .top-right {
   transition: fill 0.5s ease;
 }
-
 .navItem:hover .top-right {
   fill: #FFFF00; /* Change the fill color to your desired value */
 }
-
 .navItem .bottom-left {
   transition: fill 0.5s ease;
 }
-
 .navItem:hover .bottom-left {
   fill: #00FF00; /* Change the fill color to your desired value */
 }
-
 .navItem .bottom-right {
   transition: fill 0.5s ease;
 }
-
 .navItem:hover .bottom-right {
   fill: #0000FF; /* Change the fill color to your desired value */
 }
