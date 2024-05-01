@@ -143,7 +143,7 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  animation: rotateReset 0.3s ease;
+  animation: rotateReset 0.5s ease;
 }
 .uClanIconDone {
   width: 30px;
@@ -200,7 +200,7 @@ body {
   animation: shake 0.5s 1;
 }
 .navItem:hover .historyIconDone {
-  animation: rotateHover 0.3s ease forwards;
+  animation: rotateHover 0.5s ease forwards;
 }
 .navItem:hover .uClanIconDone {
   animation: bounce 0.5s 1;
