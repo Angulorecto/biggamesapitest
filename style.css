@@ -123,6 +123,12 @@ body {
     top: 8px; /* Adjust as needed */
     right: 3%;
 }
+.homeIconDone {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  animation: return 0.5s ease;
+}
 .leaderIconDone {
   width: 30px;
   height: 30px;
@@ -288,5 +294,8 @@ body {
 @keyframes return {
   to {
     transform: rotate(0deg) translateY(0);
+    width: 30px;
+    height: 30px;
+    
   }
 }
