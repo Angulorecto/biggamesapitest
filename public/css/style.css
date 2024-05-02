@@ -137,13 +137,14 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  animation: return 0.5s ease;
+  transition: translate 0.5s ease-in-out;
 }
 .historyIconDone {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  animation: rotateReset 0.5s ease;
+  rotate: 0deg;
+  transition: rotate 0.5s ease;
 }
 .uClanIconDone {
   width: 30px;
@@ -200,7 +201,8 @@ body {
   animation: shake 0.5s 1;
 }
 .navItem:hover .historyIconDone {
-  animation: rotateHover 0.5s ease forwards;
+  rotate: -360deg;
+  transition: rotate 0.5s ease;
 }
 .navItem:hover .uClanIconDone {
   animation: bounce 0.5s 1;
@@ -219,6 +221,7 @@ body {
   color: #FFFFFF;
   top: 150px;
   margin-left: 5%;
+  margin-top: 3%;
   z-index: 1; /* Ensure the title is above other content */
 }
 .uClanInfo {
@@ -239,45 +242,51 @@ body {
   top: 290px; /* Adjust top value to align with uClanInfo */
   margin-left: 50%;
 }
+.itemsContent {
+  margin-left: 4%;
+  margin-top: 5%;
+}
 .allItemsListCategory {
   background-color: #202020;
   border-radius: 10px;
   height: 10%;
-  width: 20%;
+  width: 22%;
   top: 250px;
-  margin-left: 5%;
+  margin-left: 1.5%;
   margin-bottom: 2%;
 
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  flex-direction: row;
   justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
+
+.itemsListA {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  text-decoration: none;
+}
+
 .allItemsListCategory svg {
   width: 30px;
   height: 30px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 15px;
 }
+
 .itemsListCatName {
   color: #FFFFFF;
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
   display: inline;
+  margin: 0; /* Reset margin to remove any default spacing */
 }
 @keyframes bounce {
    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
    40% {transform: translateY(-10px);} 
    60% {transform: translateY(5px);} 
-}
-@keyframes rotateHover {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-@keyframes rotateReset {
-  100% {
-    transform: rotate(0);
-  }
 }
 @keyframes shake {
   10%, 50%, 90% {

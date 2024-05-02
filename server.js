@@ -22,6 +22,18 @@ app.get("/items", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'everything.html'));
 });
 
+app.get("/history", (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'history.html'));
+});
+
+app.get("/your-clan", (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'your-clan.html'));
+});
+
+app.get("/leaderboards", (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'leaderboards.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

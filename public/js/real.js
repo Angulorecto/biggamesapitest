@@ -76,6 +76,10 @@ document.addEventListener("DOMContentLoaded", async function() {
       let div = document.createElement("div");
       div.className = "allItemsListCategory";
       
+      let a = document.createElement("a");
+      a.className = "itemsListA";
+      a.href = "";
+
       let catName = document.createElement("h1");
       catName.innerHTML = "PLACEHOLDER";
       catName.className = "itemsListCatName";
@@ -83,11 +87,29 @@ document.addEventListener("DOMContentLoaded", async function() {
       let catIcon = document.createElement("span");
       catIcon.className = icon;
 
-      div.appendChild(catIcon);
-      div.appendChild(catName);
-      document.getElementsByClassName("content")[0].appendChild(div);
+      a.appendChild(catIcon);
+      a.appendChild(catName);
+      div.appendChild(a);
+      document.getElementsByClassName("itemsContent")[0].appendChild(div);
     });
   }
+
+  if (window.location.pathname == "/items") {
+    fetch("https://biggamesapi.io/api/collections")
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === "ok") {
+          data.data.forEach(item => {
+           const div = document.createElement("div");
+           div.textContent = item;
+           document.body.appendChild(div);
+         });
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+      });
+   }
 
   Object.keys(icons).forEach(iconType => {
       replace(iconType, icons[iconType]);
