@@ -1,5 +1,3 @@
-import { getCollections, getClans } from './apiFunctions.js';
-
 function replace(iconType, iconSVG) {
     const icons = document.querySelectorAll(`.${iconType}`);
   
@@ -73,10 +71,6 @@ const icons = {
 const iconOrder = ["acheivementsIcon", "boostsIcon", "boothsIcon", "boxesIcon", "buffsIcon", "charmsIcon", "currencyIcon", "eggsIcon", "enchantsIcon"];
 
 document.addEventListener("DOMContentLoaded", async function() {
-  Object.keys(icons).forEach(iconType => {
-    replace(iconType, icons[iconType]);
-  });
-
   if (window.location.pathname == "/items") {
     iconOrder.forEach(icon => {
       let div = document.createElement("div");
@@ -95,19 +89,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     });
   }
 
-  if (window.location.pathname == "/apiTest") {
-    try {
-      const collectionData = await getCollections();
-      const clanData = await getClans();
-      
-      const apiData = [...collectionData, ...clanData];
-      var p = document.createElement("p");
-      p.innerHTML = JSON.stringify(apiData);
-      document.getElementsByClassName("content")[0].appendChild(p);
-      
-      console.log('API data fetched and displayed successfully.');
-    } catch (error) {
-      console.error('An error occurred while fetching the API data:', error);
-    }
-  }
+  Object.keys(icons).forEach(iconType => {
+      replace(iconType, icons[iconType]);
+  });
 });
